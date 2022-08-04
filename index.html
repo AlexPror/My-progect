@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Мой бранч</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Slabo+27px"
+      rel="stylesheet"
+    />
+    <link href="css/app.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Моя страница<strong></strong></h1>
+      <h2>Добавить новых учеников</h2>
+      <p class="byline">
+        План-календарь соревнований
+        <strong>Клуба "Мицудэн" на 2022-2023год</strong>
+      </p>
+      <ul>
+        <li>Чемпионат г. Москвы сентябрь 2022</li>
+        <li>Чемпионат г. Калуга окттябрь 2022</li>
+        <li>Чемпионат Европы ноябрь 2022</li>
+        <li>Чемпионат Мира декабрь 2022</li>
+        <li>Чемпионат Японии нварь 2023</li>
+        <li>Чемпионат ЦФО февраль 2023</li>
+      </ul>
+      <h3>Список учеников клуба "Мицудэн"</h3>
+      <script type="text/javascript">
+        function addRow(id) {
+          var tbody = document
+            .getElementById(id)
+            .getElementsByTagName("tbody")[0];
+          var row = document.createElement("tr");
+          var td1 = document.createElement("td");
+          td1.appendChild(document.createTextNode(""));
+          var td2 = document.createElement("td");
+          td2.appendChild(document.createTextNode(""));
+          var td3 = document.createElement("td");
+          td1.appendChild(document.createTextNode(""));
+          var td4 = document.createElement("td");
+          td2.appendChild(document.createTextNode(""));
+          var td5 = document.createElement("td");
+          td1.appendChild(document.createTextNode(""));
+          var td6 = document.createElement("td");
+          td2.appendChild(document.createTextNode(""));
+          var td7 = document.createElement("td");
+          td1.appendChild(document.createTextNode(""));
+          var td8 = document.createElement("td");
+          td2.appendChild(document.createTextNode(""));
+          row.appendChild(td1);
+          row.appendChild(td2);
+          row.appendChild(td3);
+          row.appendChild(td4);
+          row.appendChild(td5);
+          row.appendChild(td6);
+          row.appendChild(td7);
+          row.appendChild(td8);
+          tbody.appendChild(row);
+        }
+      </script>
+      <p>
+        <a href="javascript://" onclick="addRow('myTable');return false;"
+          >Добавить строку</a
+        >
+      </p>
+      <table id="myTable" cellspacing="0" border="1">
+        <tr>
+          <th>N п/п</th>
+          <th>Пол</th>
+          <th>Фамилия</th>
+          <th>Имя</th>
+          <th>Отчество</th>
+          <th>Дата рождения</th>
+          <th>Кю/дан</th>
+          <th>Точный вес</th>
+        </tr>
+        <!--ряд с ячейками заголовков-->
+        <tr>
+          <td>1</td>
+          <td>м</td>
+          <td>Ивановиванов</td>
+          <td>ИванИванИВан</td>
+          <td>ИвановичИвановичИванович</td>
+          <td>12.03.2009</td>
+          <td>5</td>
+          <td>84</td>
+        </tr>
+        <!--ряд с ячейками тела таблицы-->
+      </table>
+    </div>
+
+    <script src="./js/libs/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
